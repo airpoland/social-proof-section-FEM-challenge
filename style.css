@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-very-dark-magenta: hsl(300, 43%, 22%);
+	--primary-soft-pink: hsl(333, 80%, 67%);
+	--neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+	--neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+	--neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: 'League Spartan', sans-serif;
+	font-size: 15px;
+}
+
+.backgroud-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60vh;
+	background-image: url(./images/bg-pattern-top-mobile.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header-text {
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	padding: 0.5em 2em;
+	text-align: center;
+	font-weight: 900;
+	color: var(--primary-very-dark-magenta);
+}
+.welcome-text {
+	padding: 0.5em 2em;
+	margin-bottom: 1.5em;
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--neutral-dark-grayish-magenta);
+	font-weight: 400;
+	line-height: 1.2em;
+	font-size: 1.1rem;
+}
+
+.ratings-stars {
+	position: relative;
+}
+
+.ratings-star-review-container {
+	width: 100%;
+	max-width: 500px;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ratings-star-review {
+	width: 80%;
+	max-width: 500px;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 15px;
+	background-color: var(--neutral-light-grayish-magenta);
+}
+.stars-img {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 4px;
+	background-image: url(./images/icon-star.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ratings-star-review ~ .ratings-star-review {
+	margin-top: 1em;
+}
+
+.ratings-star-review div,
+.ratings-star-review p {
+	margin: 0.5em;
+	color: var(--primary-very-dark-magenta);
+	font-weight: 900;
+}
+
+.ratings-reviews {
+	display: flex;
+	flex-direction: column;
+}
+
+.ratings-review-container {
+	margin-top: 2.5em;
+	width: 100%;
+	min-width: 300px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: center;
+}
+
+.ratings-review-block {
+	width: 80%;
+	min-width: 300px;
+	max-width: 500px;
+
+	padding: 2.5em 1.5em;
+	color: white;
+	background-color: var(--primary-very-dark-magenta);
+	border-radius: 15px;
+}
+
+.ratings-review-block-header {
+	display: flex;
+	align-items: center;
+	padding-bottom: 1em;
+}
+
+.ratings-review-block-header p {
+	padding-left: 1em;
+	font-weight: 400;
+}
+
+.review-name {
+	font-weight: 900;
+}
+
+.rose {
+	color: var(--primary-soft-pink);
+	padding-top: 0.2em;
+}
+
+.review-img {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-src-colin {
+	background-image: url(./images/image-colton.jpg);
+}
+.img-src-irene {
+	background-image: url(./images/image-irene.jpg);
+}
+.img-src-anne {
+	background-image: url(./images/image-anne.jpg);
+}
+
+.attribution {
+	padding: 3em;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+footer {
+	position: relative;
+}
+
+.backgroud-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50vh;
+	background-image: url(./images/bg-pattern-bottom-mobile.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 700px) {
+	.backgroud-top {
+		background-image: url(./images/bg-pattern-top-desktop.svg);
+	}
+
+	.top-container {
+		position: relative;
+		width: 100%;
+		max-width: 1200px;
+		margin: 20px auto;
+		display: flex;
+	}
+
+	.top-container-left {
+		display: flex;
+		width: 40%;
+		flex-direction: column;
+	}
+
+	.header-text {
+		background-color: none;
+		font-size: 3em;
+	}
+	.welcome-text {
+		background-color: none;
+	}
+
+	.ratings-star-review-container {
+		position: absolute;
+		right: 0;
+		height: 100%;
+		width: 45%;
+		max-width: 600px;
+		justify-content: center;
+	}
+
+	.rating-stars {
+		background-color: aqua;
+		border: 10px solid aqua;
+	}
+
+	.mr1 {
+		margin-left: -6em;
+	}
+
+	.mr2 {
+		margin-left: -3em;
+	}
+
+	.ratings-review-container {
+		flex-direction: row;
+		gap: 2em;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
+	.ratings-review-block {
+		min-height: 150px;
+		min-width: 200px;
+	}
+
+	.ptop1 {
+		margin-top: 40px;
+	}
+	.ptop2 {
+		margin-top: 80px;
+	}
+
+	.backgroud-bottom {
+		background-image: url(./images/bg-pattern-bottom-desktop.svg);
+	}
+}
